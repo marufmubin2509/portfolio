@@ -1,0 +1,799 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Source Sans Pro', sans-serif;font-family;
+
+}
+a, a:hover{
+	text-decoration: none;
+}
+
+.homepage{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	/*padding: 50px 0px;*/
+	/*background: url("../img/one.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;*/
+	background-color: rgb(228 204 194);
+	/*background-image: url("../img/footer_bg_red.png"), 
+	url("../img/footer_bg.png"),url("../img/baner.jpg");
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 250px, 550px, cover;
+	background-position: right bottom, center center, center center;*/
+}
+/*menu bar start*/
+
+.contain
+{
+	position: relative;
+	width: 80px;
+	height: 750px;
+}
+.navigation
+{
+	position: absolute;
+	width: 100%;
+	height: 686px;
+	background-color: #fff;
+	border-radius: 15px;
+	display: grid;
+	place-items: center;
+	margin-top: 80px;
+}
+
+.contain .toggle {
+    position: absolute;
+    top: 350px;
+    right: -32px;
+    width: 50px;
+    height: 50px;
+    background: #f5f5f5;
+    cursor: pointer;
+    border: 5px solid #5a6b7a;
+    border-radius: 50%;
+}
+.contain .toggle::before
+{
+	content: '\f054';
+	font-family: fontAwesome;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 41px;
+	color: #5a6b7a;
+}
+.contain .toggle.active::before
+{
+	content: '\f053';
+}
+.contain .navigation.active{
+	width: 300px;
+}
+.contain .navigation .title{
+	display: none;
+}
+.contain .navigation.active .title{
+	display: block;
+	margin-left: 35px;
+	color: #5a6b7a;
+	font-weight: 600;
+}
+.navigation ul
+{
+	position: absolute;
+	width: 100%;
+	height: 750px;
+	background-color: #fff;
+	border-radius: 15px;
+	display: grid;
+	place-items: center;
+	margin-top: 80px;
+	padding: 0px !important;
+}
+.navigation ul li
+{
+	position: relative;
+	list-style: none;
+	line-height: 40px;
+	font-size: 34px;
+	display: block;
+	width: 100%;
+}
+.navigation ul li:hover
+{
+	background-color: #efefef;
+}
+.navigation ul li a
+{
+	position: relative;
+	width: 100%;
+	margin-left: -4px;
+	display: flex;
+}
+.navigation ul li a .icon
+{
+	position: relative;
+	/*min-width: 80px;*/
+	/*display: block;*/
+	height: 80px;
+	text-align: center;
+	/*margin-right: 64px;*/
+	overflow: hidden;
+	margin-left: 28px;
+	color: #5a6b7a;
+}
+.navigation ul li a .icon .fa {
+    font-size: 34px;
+    position: relative;
+    /* display: block; */
+    height: 60px;
+    line-height: 77px;
+    white-space: nowrap;
+    /* margin-left: 86px; */
+    overflow: hidden;
+    font-weight: 500;
+}
+.navigation ul li a .title
+{
+	position: relative;
+	display: block;
+	height: 60px;
+	line-height: 65px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/*.toggle{
+	display: block !important;
+}*/
+/*menu bar end*/
+/*Body contant of Home Page start here*/
+.inner-div-contain
+{
+	width: 100vw;
+	height: 100vh;
+	/*overflow: hidden;
+	background-image: url("../img/baner.jpg") no-repeat bottom right;
+	background-size: 850px;*/
+	background-image: linear-gradient(to left, rgba(109, 179, 242, .6), rgb(228 204 194)), url('../img/onee.png');
+	background-size: cover, 1250px;
+	background-position: center, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	/*display: grid;
+	justify-content: center;*/
+	overflow: hidden;
+}
+.inner-div-contain p
+{
+	text-align: center;
+	font-size: 22px;
+	line-height: 28px;
+	overflow: hidden;
+	width: 70%;
+	line-height: 36px;
+	letter-spacing: 1.2px;
+	color: rgb(255 255 255);
+	font-weight: 500;
+}
+
+.inner-div-contain h1
+{
+	text-align: center;
+	width: 70%;
+	overflow: hidden;
+	margin: 0px;
+	font-size: 85px;
+	padding: 20px;
+	font-weight: 600;
+	color: rgb(255 255 255);
+}
+.inner-div-contain h2
+{
+	text-align: center;
+	width: 65%;
+	overflow: hidden;
+	font-size: 42px;
+	line-height: 80px;
+	font-weight: 500;
+	color: rgb(255 255 255);
+}
+.hi{
+	position: absolute;
+	top: 175px;
+	right: 14px;
+	width: 80%;
+	overflow: hidden;
+}
+.inner-div-contain .hi span{
+	color: #6db3f2;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+/*Body contant of Home Page end Here*/
+/*.navigation ul li a .title{
+	display: none;
+
+}*/
+/***************************************************
+*****inner-contact-form-regis css code start here**
+****************************************************/
+.inner-div-contain-regis
+{
+	width: 100vw;
+	height: 100vh;
+	/*overflow: hidden;
+	background-image: url("../img/baner.jpg") no-repeat bottom right;
+	background-size: 850px;*/
+	
+	background-image: linear-gradient(to left, rgba(109, 179, 242, .6), rgb(228 204 194)), url('../img/onee.png');
+	background-size: cover, 1250px;
+	background-position: center, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	/*display: grid;
+	justify-content: center;*/
+	overflow: hidden;
+}
+.inner-div-contain-regis .main-form-reg{
+	width: 45%;
+	margin: 135px 130px;
+	padding: 80px;
+	border-radius: 15px;
+	/*background: #ba92e3;
+box-shadow:  45px 45px 74px #a682ca,
+             -45px -45px 74px #cea2fc;*/
+	border-radius: 50px;
+	background: /*#9cc4e8*/ linear-gradient(to left, rgb(109 179 242 / 2%), rgb(109 179 242 / 55%));
+	box-shadow:  /*41px 41px 4px #9ac2e6*/ linear-gradient(to left, rgba(109, 179, 242, .9), rgb(109, 179, 242)),
+             /*-41px -41px 4px #9ec6ea*/ linear-gradient(to left, rgba(109, 179, 242, .9), rgb(109, 179, 242));
+}
+.inner-div-contain-regis .main-form-reg .form-grop{
+	width: 100%;
+}
+.inner-div-contain-regis .main-form-reg .form-grop .labl-edit{
+	width: 20%;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	color: rgb(255 255 255);
+}
+.inner-div-contain-regis .main-form-reg .form-grop .form-control {
+    width: 60%;
+    display: inline-block;
+    margin: 15px auto;
+    padding: 15px 15px 15px 30px;
+    color: #fff;
+    border-radius: 50px;
+    border-radius: 50px;
+    background: rgba(109, 179, 242, .6);
+    box-shadow: inset 20px 20px 100px #3e4e5d, inset -20px -20px 100px #faffff;
+    text-transform: uppercase;
+}
+.inner-div-contain-regis .main-form-reg .form-btn{
+ 	width: 30%;
+ 	display: inline-block;
+ 	text-align: center;
+ 	margin: 42px 30px 0px 0px;
+ 	padding: 12px;
+ 	border-radius: 50px;
+ 	border-color: #b3c1d5;
+ 	border-radius: 50px;
+ 	color: rgb(255 255 255);
+ 	font-size: 18px;
+ 	font-weight: 500;
+ 	/* background: rgba(109, 179, 242, .6); */
+ 	box-shadow: inset 20px 20px 100px #3e4e5d, inset -20px -20px 100px #faffff;
+ 	/*border-radius: 30px;
+background: #ba92e3;
+box-shadow: inset 19px 19px 38px #a27fc5,
+            inset -19px -19px 38px #d2a5ff;*/
+}
+.inner-div-contain-regis .main-form-reg a{
+	font-size: 22px;
+	font-weight: 700;
+	color: rgb(255 255 255);
+}
+.inner-div-contain-regis .main-form-reg h2{
+	text-align: center;
+	font-size: 52px;
+	font-weight: 600;
+	color: rgb(255 255 255);
+	margin: 0px 0px 30px;
+}
+.inner-div-contain-regis .main-form-reg a .fa-sign-in{
+	font-size: 35px;
+}
+/***************************************************
+*****inner-contact-form-regis css code start here**
+****************************************************/
+
+/*************************************
+******about us css linking here********
+**************************************/
+.inner-about{
+	width: 70%;
+	padding: 40px 0px;
+	display: flex;
+	flex: wrap;
+}
+.inner-about .text-div{
+	width: 30%;
+	height: 400px;
+	background-color: red;
+	flex: 20%;
+}
+.inner-about .img-div{
+	width: 40%;
+	height: 400px;
+	background-color: green;
+	flex: 20%;
+}
+.inner-about .img-div img{
+	width: 60%;
+	opacity: .6;
+}
+/*************************************
+******about us css linking here********
+**************************************/
+
+
+
+
+/******************************************
+****************contactUs******************
+*******************************************/
+.main-form{
+	width: 45%;
+	    margin: 142px 130px;
+	padding: 80px;
+	border-radius: 15px;
+	/*background: #ba92e3;
+box-shadow:  45px 45px 74px #a682ca,
+             -45px -45px 74px #cea2fc;*/
+	border-radius: 50px;
+	background: /*#9cc4e8*/ linear-gradient(to left, rgb(109 179 242 / 2%), rgb(109 179 242 / 55%));
+	box-shadow:  /*41px 41px 4px #9ac2e6*/ linear-gradient(to left, rgba(109, 179, 242, .9), rgb(109, 179, 242)),
+             /*-41px -41px 4px #9ec6ea*/ linear-gradient(to left, rgba(109, 179, 242, .9), rgb(109, 179, 242));
+}
+.main-form .form-control{
+	width: 75%;
+	color: #fff;
+	margin: 4px auto 24px;
+	padding: 15px 15px 15px 30px;
+	text-transform: uppercase;
+	border-radius: 50px;
+	border-radius: 50px;
+	background: rgba(109, 179, 242, .6);
+	box-shadow: inset 20px 20px 100px #3e4e5d,
+    inset -20px -20px 100px #faffff;
+	/*border-radius: 30px;
+background: #ba92e3;
+box-shadow: inset 19px 19px 38px #a27fc5,
+            inset -19px -19px 38px #d2a5ff;*/
+}
+.main-form .form-btn{
+	width: 30%;
+	display: block;
+	text-align: center;
+	margin: 5px 0px 0px 90px;
+	padding: 10px;
+	border-radius: 50px;
+	border-color: #b3c1d5;
+	border-radius: 50px;
+	/* background: rgba(109, 179, 242, .6); */
+	box-shadow: inset 20px 20px 100px #3e4e5d, inset -20px -20px 100px #faffff;
+	/*border-radius: 30px;
+background: #ba92e3;
+box-shadow: inset 19px 19px 38px #a27fc5,
+            inset -19px -19px 38px #d2a5ff;*/
+}
+.main-form .labl-edit{
+    display: block !important;
+    margin-left: 113px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: rgb(255 255 255);
+}
+.main-form h2{
+	text-align: center;
+	font-size: 52px;
+	font-weight: 600;
+	color: rgb(255 255 255);
+	padding: 0px 0px 10px;
+}
+.main-form .form-btn{
+ 	font-size: 22px;
+ 	font-weight: 500;
+ 	display: inline-block;
+ 	margin-right: 25px;
+ 	letter-spacing: 1.5px;
+ 	color: rgb(255 255 255);
+}
+.main-form .form-group a .fa-sign-out{
+	font-size: 26px;
+}
+.main-form .form-group a{
+	font-size: 22px;
+	font-weight: 700;
+	color: rgb(255 255 255);
+}
+/******************************************
+****************contactUs******************
+*******************************************/
+
+/*************************************
+**portfolio section code start here**
+**************************************/
+.inner-div-portfolio{
+	width: 100vw;
+	height: 100vh;
+	/*overflow: hidden;
+	background-image: url("../img/baner.jpg") no-repeat bottom right;
+	background-size: 850px;*/
+	
+	background-image: linear-gradient(to left, rgba(109, 179, 242, .6), rgb(228 204 194)), url('../img/onee.png');
+	background-size: cover, 1250px;
+	background-position: center, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	/*display: grid;
+	justify-content: center;*/
+	overflow: hidden;
+	display: flex;
+}
+.inner-div-portfolio .inner-one {
+    width: 20%;
+    height: 480px;
+    border-radius: 25px;
+    box-shadow: 10px 9px 3px 1px #57595dcf;
+    margin-left: 30px;
+    background-color: #7890ad;
+    margin-top: 261px;
+}
+.inner-div-portfolio  .inner-two{
+	width: 38%;
+	height: 480px;
+	margin-left: 35px;
+	margin-top: 260px;
+	border: 10px solid #7890af;
+	border-radius: 25px;
+	box-shadow: 10px 9px 3px 1px #57595dcf;
+	overflow: hidden;
+	position: relative;
+}
+.inner-two .slider-body img{
+   width: 100%;
+   height: 460px;
+}
+.inner-two .slider-btn{
+	margin-top: -50px;
+}
+.inner-two .slider-btn ul{
+	display: block;
+	text-align: center;
+}
+.inner-two .slider-btn ul li{
+	display: inline-block;
+	margin-left: 28px;
+	list-style-type: none;
+}
+.inner-two{
+	position: relative;
+}
+.inner-two .slider-btn ul{
+	position: absolute;
+	left: 215px;
+	bottom: 20px;
+}
+/*.inner-one .slider-new img{
+ 	width: 100%;
+ 	height: 100%;
+}*/
+.slider-btn ul li{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 3px solid #000;
+	cursor: pointer;
+}
+.slider-btn ul li:active,
+.slider-btn ul li:focus,
+.slider-btn ul li:visited,
+.slider-btn ul li:focus-visible,
+.slider-btn ul li:focus-within{
+	border: 3px solid red;
+}
+.inner-one{
+	padding: 40px;
+}
+.inner-one h2{
+	font-size: 32px;
+	color: #fff;
+	font-weight: 600;
+}
+.inner-one p{
+	font-size: 16px;
+	margin: 22px 0px;
+	line-height: 24px;
+	color: #fff;
+}
+.inner-one li{
+   list-style: none;
+   margin: 20px 0px;
+   color: #fff;
+}
+.inner-one ul{
+	margin: 20px 0px !important;
+    padding: 0px !important;
+}
+.inner-one li .fa{
+	margin-right: 15px;
+	font-size: 20px;
+}
+.inner-one .log-btn{
+	text-align: center;
+}
+.btton-div{
+	width: 100%;
+	text-align: center;
+}
+.btton-div .log-btn{
+	margin-top: 35px;
+	padding: 12px 25px;
+	color: #fff;
+	background-color: #000;
+	border: transparent;
+	transition: .3s;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btton-div .log-btn:hover{
+	color: #000;
+	background-color: #fff;
+}
+/*************************************
+**portfolio section code end here**
+**************************************/
+
+/**************************************
+*****about us page code start here*****
+**************************************/
+.inner-about{
+	width: 100%;
+	height: 900px;
+	padding: 200px 0px;
+}
+.doble-div-one{
+	width: 40%;
+	box-shadow: 0px 0px 16px 3px;
+	height: 500px;
+	margin-left: 25px;
+	background: url("../img/mockup/shapthrd.png"),#5b626f;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 650px;
+}
+.double-div-two{
+	width: 18%;
+	height: 500px;
+	margin-left: 25px;
+}
+.inner-about .doble-div-one{
+	padding: 50px;
+	/*	border: 5px solid #99a3b7;*/
+}
+.double-div-two iframe{
+	box-shadow: 0px 0px 16px 3px;
+	border: none !important;
+}
+.inner-about .doble-div-one .fa-cogs{
+	font-size: 56px !important;
+	color: #fff;
+}
+.inner-about .doble-div-one span{
+ 	margin-right: 25px;
+ 	
+}
+.inner-about .doble-div-one .fa{
+	font-size: 25px;
+}
+.inner-about .doble-div-one h3{
+	font-size: 52px;
+	font-weight: 600;
+	color: #fff;display: inline-block;margin: 0px 0px 35px 25px;text-align: center;}
+.inner-about .doble-div-one h6{
+    font-size: 26px;
+    color: #fff;
+    line-height: 35px;
+    margin-bottom: 25px;
+    letter-spacing: 1.2px;
+}
+.inner-about .doble-div-one ul{
+padding: 0px;
+display: block;
+width: 100%;
+margin: 30px 0px;
+}
+.inner-about .doble-div-one li{	
+display: inline-block;	
+list-style: none;	
+font-size: 28px;	
+color: #fff;
+}
+.inner-about .doble-div-one ul .icons{
+	margin: 20px 30px 0px 0px;
+	font-size: 36px;
+	color: #ffffff;
+}
+.inner-about .doble-div-one ul .icons:hover{
+	color: #fff;
+	cursor: pointer;
+}
+/**************************************
+*****about us page code start here*****
+**************************************/
+
+
+
+/*************************************
+**Testimonial section code start here**
+**************************************/
+.main-div{
+	width: 80%;
+	height: 500px;
+	margin: 120px 0px;
+}
+.main-div .testi{
+	font-size: 56px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	text-align: center;
+	color: #fff;
+}
+.main-div .tastimonial-section{
+	width: 75%;
+	height: 450px;
+	margin: 80px 0px 0px 83px;
+	background: url(../img/mockup/shape.png), url(../img/mockup/shape-rotate.png), #5b626f;
+	background-repeat: no-repeat;
+	background-position: top left, bottom right;
+	background-size: 400px;
+	box-shadow: 6px 0px 18px #333;
+	text-align: center;
+	padding: 40px 0px 0px 0px;
+	color: #fff;
+	font-size: 24px;
+}
+.testimonial-section
+{
+	width: 100vw;
+	height: 100vh;
+	/*overflow: hidden;
+	background-image: url("../img/baner.jpg") no-repeat bottom right;
+	background-size: 850px;*/
+	background-image: linear-gradient(to left, rgba(109, 179, 242, .6), rgb(228 204 194)), url('../img/maruf.png');
+	background-size: cover, 1250px;
+	background-position: center, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	overflow: hidden;
+}
+.testimonial-another{
+	width: 100%;
+	text-align: center;
+}
+.main-div .testimonial-another p{
+	width: 55%;
+	margin: 15px auto 0px;
+	line-height: 34px;
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+.main-div .testimonial-another .image{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: 0px auto 25px;
+	border: 2px solid #fff;
+	margin-bottom: 25px;
+}
+.main-div .testimonial-another .my-work .fa{
+	margin-right: 5px;
+}
+.main-div .testimonial-another .my-work span{
+	margin-right: 10px;
+	font-size: 22px;
+}
+.main-div .testimonial-another .my-work{
+	margin-top: 10px;
+}
+/*************************************
+**Testimonial section code End here**
+**************************************/
+
+
+/************************************
+****Service Page code start here****
+***************************************/
+.Service-Page
+{
+	width: 100vw;
+	height: 100vh;
+	/*overflow: hidden;
+	background-image: url("../img/baner.jpg") no-repeat bottom right;
+	background-size: 850px;*/
+	background-image: linear-gradient(to left, rgba(109, 179, 242, .6), rgb(228 204 194)), url('../img/onee.png');
+	background-size: cover, 1250px;
+	background-position: center, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	/*display: grid;
+	place-items: center;*/
+	overflow: hidden;
+}
+.Service-Page .pic-one{
+	background-image: url("../img/mockup/picsix.png");
+}
+.Service-Page .pic-two{
+	background-image: url("../img/mockup/pictwo.png");
+}
+.Service-Page .pic-three{
+	background-image: url("../img/mockup/picthree.png");
+}
+.Service-Page .pic-four{
+	background-image: url("../img/mockup/picfour.png");
+}
+.Service-Page .pic-five{
+	background-image: url("../img/mockup/picone.png");
+}
+.Service-Page .pic-six{
+	background-image: url("../img/mockup/picfive.png");
+}
+.Service-Page .pic-seven{
+	background-image: url("../img/mockup/picseven.png");
+}
+.Service-Page .pic-eight{
+	background-image: url("../img/mockup/piceight.png");
+}
+.Service-Page .inner-contain{
+	width: 15%;
+	display: inline-block;
+	margin: 20px 0px 0px 20px;
+	height: 300px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 5s;
+	text-align: center;
+	border: 3px solid #95a0b4;
+}
+.Service-Page .inner-contain .btn{
+	margin: 220px 0px 0px;
+	background-color: #000;
+	border: none;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.Service-Page .inner-contain .btn:hover{
+	background-color: #7890ae;
+	color: #fff;
+	border: none;
+}
+.Service-Page .inner-contain:hover{
+	cursor: pointer;
+	background-position: bottom;
+}
+
+.Service-Page .main-container{
+	margin: 120px 0px;
+}
+/**************************************
+******Service Page code end here*******
+***************************************/
